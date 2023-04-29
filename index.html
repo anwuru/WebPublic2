@@ -361,12 +361,15 @@ var _hmt = _hmt || [];
       
         <h4 id="hexo-d上传失败-改用hexo-d-g解决"><a href="#hexo-d上传失败-改用hexo-d-g解决" class="headerlink" title="hexo d上传失败 改用hexo d -g解决"></a>hexo d上传失败 改用hexo d -g解决</h4><p>-g是全局的意思？</p>
 <p>参见：<a target="_blank" rel="noopener" href="https://blog.csdn.net/sirobot/article/details/110630662">hexo d 报错 hexo 安装搜索功能 hexo 报错没有git_hexo安装4058问题_0x8g1T9E的博客-CSDN博客</a></p>
-<p>其他：<a target="_blank" rel="noopener" href="https://www.myosotis.xin/2021/08/25/hexo-8/">Hexo部署出现错误 Error: Spawn failed 解决方式 | 毋忘草的小岛 (myosotis.xin)</a></p>
+<p>其他：</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_69087087/article/details/128838186">(7条消息) git:上传代码时，出现fatal: unable to access ‘XXX‘: Recv failure: Connection was reset 错误解决方法（保姆级教学）_王王小小酥o的博客-CSDN博客</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.myosotis.xin/2021/08/25/hexo-8/">Hexo部署出现错误 Error: Spawn failed 解决方式 | 毋忘草的小岛 (myosotis.xin)</a></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">##进入站点根目录</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##删除git提交内容文件夹</span></span><br><span class="line"><span class="built_in">rm</span> -rf .deploy_git/</span><br><span class="line"></span><br><span class="line"><span class="comment">##执行</span></span><br><span class="line">git config --global core.autocrlf <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##最后</span></span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
 
 
 
 <p>猜测大概率是网络问题，不做更改重试多次也能成功</p>
+<p>好像不开clash代理才能推送？</p>
 <h4 id="使用Yilia主题，本地可显示，但推送后头像不能显示"><a href="#使用Yilia主题，本地可显示，但推送后头像不能显示" class="headerlink" title="使用Yilia主题，本地可显示，但推送后头像不能显示"></a>使用Yilia主题，本地可显示，但推送后头像不能显示</h4><p><img src="E:\Documents\GitHub\test\images\image-20230429194539242.png" alt="image-20230429194539242"></p>
 <p>怀疑是没有权限访问更深层的目录？</p>
 <p>将&#x2F;assets&#x2F;blogImg&#x2F;touxiang.png改为了&#x2F;touxiang.png后解决</p>
@@ -955,11 +958,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">待办事项</a>
+                <a href="javascript:void(0)" class="js-tag color5">生活感想</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">生活感想</a>
+                <a href="javascript:void(0)" class="js-tag color5">待办事项</a>
               </li>
              
               <li class="article-tag-list-item">
